@@ -1,0 +1,23 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo{
+    height: 500px;
+    background-image: url(/Img/tecladoFondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondo h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+#body1{
+    background-color: whitesmoke;
+}
