@@ -13,7 +13,7 @@
     <!--CSS PROPIO-->
     <link rel="stylesheet" href="style.css">
 
-    <title>Parcial - Organización Contable</title>
+    <title>Parcial - Laboratorio III</title>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
         <div id="spinner" class="spinner-border text-primary" role="">
             <span class="sr-only"></span>
         </div>
-        <h1 id="encabezado">Parcial II - Contable</h1>
+        <h1 id="encabezado">Labo III</h1>
     </div>
 
     <!--ACCORDION-->
@@ -58,7 +58,7 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h3>Cuentas Activo</h3>
+                        <h3>Herencia I</h3>
                     </button>
                 </h2>
             </div>
@@ -66,9 +66,10 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     <p style="font-size:large;"> 
-                        - Caja - Valores a Depositar - Banco Cuenta Corriente - Banco Caja de Ahorro
-                        - Deudores Varios - Clientes - Documentos a Cobrar - Mercaderias
-                        - Bienes de Uso - Rodados - Inmuebles - Equipos de Computacion                     
+                        - La Herencia es una relacion entre clases - Clase Base y Clase Derivada
+                        - Permite tener varias clases con un comportamiento similar en ciertas ocasiones y un comportamiento especifico en otras
+                        - Se utiliza cuando dos clases o mas son similares pero tienen caracteristicas que las diferencian.
+                        - La interpretacion se defina con la expresion "ES UN"                    
                     </p>
                 </div>
             </div>
@@ -78,16 +79,19 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h3>Cuentas Pasivo</h3>                      
+                        <h3>Herencia II</h3>                      
                     </button>
                 </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
                     <p style="font-size:large;">
-                        - Acreedores Varios - Todo lo que se a Pagar - Proveedores - Impuestos a Pagar
-                        - Servicios a Pagar - Documentos a Pagar - Sueldos y J a pagar
-                        <b>-Retenciones</b>
+                        - Los objetos de la clase derivada poseen todos los miembros de la clase base.
+                        - La clase derivada puede definir sus propios metodos y atributos.
+                        - La derivada puede acceder a los miembros VISIBLES de la clase base directamente.
+                        - La clase BASE puede definir miembros con el modificador de acceso PROTECTED,
+                        estos seran unicamente accesibles de las clases derivadas, y requieren metodos
+                        GET Y SET.
                     </p>
                 </div>
             </div>
@@ -97,14 +101,18 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                         data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h3>Cuentas Patrimonio Neto</h3>
+                        <h3>Herencia III</h3>
                     </button>
                 </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <p style="font-size: large;">
-                        - Capital - Reservas
+                       -Referencia SUPER = hace referencia a los atributos de la clase base.
+                       - Lo utilizamos para llamar a los constructores de la clase Base, y para llamar a un metodo existente
+                        en la clase base, el cual podemos redefinir con la clausula @OVERRIDE.
+                       - Los metodos constructores de la clase BASE NO SE HEREDAN.
+                       - Para invocar a un constructor de la clase Base en forma explicita usamos SUPER();
                     </p>
                 </div>
             </div>
@@ -113,15 +121,19 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            <h3>Cuentas de Ganancias</h3>
+                            <h3>POLIMORFISMO</h3>
                         </button>
                     </h2>
                 </div>
                 <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
                     <div class="card-body">
                         <p style="font-size: large;">
-                            - Ventas - Donaciones Recibidas - Intereses Ganados - Bonificaciones Recibidas
-                            - Alquileres Ganados 
+                            - Es la capacidad que tienen distintos objetos de responder a un mismo Mensaje
+                            ya sea haciendo cosas distintas o no.
+                            - Toda variable de tipo Referencia puede apuntar a objetos de su misma clase
+                            y de cualquier derivada.
+                            - Una clase derivada puede proveer una nueva implementacion de un metodo Heredado.
+                            - Los parametros y retorno deben coincidir con los del mismo metodo en la base.
                         </p>
                     </div>
                 </div>
@@ -131,16 +143,15 @@
                             <button class="btn btn-link btn-block text-left collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
                                 aria-controls="collapse5">
-                                <h3>Cuentas de Perdidas</h3>
+                                <h3>POLIMORFISMO II</h3>
                             </button>
                         </h2>
                     </div>
                     <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
                         <div class="card-body">
                             <p style="font-size: large;">
-                               - Sueldo y Jornales - SAC - Cargas Sociales - Gastos de Alquileres
-                                - Gastos de Servicios - Internet - Telefono - Energia Electrica
-                                - Gatos varios <b>- Contribuciones</b>
+                               - El polimorfismo se encuentra al ejecutar metodos sobreescritos con referencias a la clase base.
+                               - Si una clase derivada no provee una sobreescritura, se ejecuta la version de la clase Base.
                             </p>
                         </div>
                     </div>
@@ -150,14 +161,18 @@
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
                                     aria-controls="collapse6">
-                                    <h3>Cuentas de Movimiento / Orden</h3>
+                                    <h3>Clases ABSTRACTAS</h3>
                                 </button>
                             </h2>
                         </div>
                         <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p style="font-size: large;">
-                                    Compras - IVA Credito Fisal(Cuando Compramos) - IVA Debito Fiscal(Cuando Vendemos)
+                                    - Tipo de clases la cual no se pueden crear instancias de la misma.
+                                    - Una clase abstracta obligatoriamente debe ser herededada.
+                                    - Puede contener metodos Abstractos los cuales para tener funcionalidades
+                                    deben ser sobreescritos en la clase derivada.
+                                    - El compilador obliga a todas las derivadas a proveer una sobreescritura.
                                 </p>
                             </div>
                         </div>
@@ -168,13 +183,18 @@
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
                                     aria-controls="collapse7">
-                                    <h3>Asientos</h3>
+                                    <h3>Colecciones de Clase Base</h3>
                                 </button>
                             </h2>
                         </div>
                         <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
                             <div class="card-body">
-                                <img src="/Img/Asientos.JPG" alt="">
+                                <p style="font-size: large;">
+                                    - Una Coleccion definida para una clase base que posee Derivadas,
+                                    Puede almacenar objetos de cualquiera de las clases de la Jerarquia.
+                                    - Si se recorre la coleccion y se Invoca un Metodo sobreescrito, se ejecuta la version 
+                                    correspondiente a cada Objeto.
+                                </p>
                             </div>
                         </div>
                     </div>
